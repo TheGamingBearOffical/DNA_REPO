@@ -1,0 +1,373 @@
+﻿{
+    "Nutrient Metabolism": [
+        {
+            "nutrient": "Folate (B9)",
+                        "nutrient": "Vitamin D",
+            "gene": "CYP2R1",
+            "snp": "rs10741657",
+            "genotypes": {
+                "AA": "Normal conversion of vitamin D",
+                "GA": "Slightly reduced vitamin D levels",
+                "GG": "Reduced ability to activate vitamin D"
+            }
+        },
+        {
+            "nutrient": "Vitamin B12",
+            "gene": "FUT2",
+            "snp": "rs601338",
+            "genotypes": {
+                "GG": "Normal B12 absorption",
+                "GA": "Slight risk of lower B12",
+                "AA": "Higher risk of B12 deficiency"
+            }
+        },
+        {
+            "nutrient": "Iron",
+            "gene": "TMPRSS6",
+            "snp": "rs855791",
+            "genotypes": {
+                "GG": "Normal iron levels",
+                "GA": "Slight reduction in iron absorption",
+                "AA": "Lower iron; possible risk for anemia"
+            }
+        },
+        {
+            "nutrient": "Omega-3",
+            "gene": "FADS1",
+            "snp": "rs174537",
+            "genotypes": {
+                "GG": "Efficient conversion of ALA to EPA/DHA",
+                "GT": "Moderate conversion",
+                "TT": "Low conversion; consider direct EPA/DHA intake"
+            }
+        },
+        {
+            "nutrient": "Calcium",
+            "gene": "CASR",
+            "snp": "rs1801725",
+            "genotypes": {
+                "GG": "Normal calcium metabolism",
+                "AG": "Slight risk of calcium imbalance",
+                "AA": "Potential altered calcium sensing"
+            }
+        },
+        {
+            "nutrient": "Magnesium",
+            "gene": "TRPM6",
+            "snp": "rs11144134",
+            "genotypes": {
+                "GG": "Normal magnesium absorption",
+                "AG": "Slightly reduced absorption",
+                "AA": "Significantly reduced absorption"
+            }
+        },
+        {
+            "nutrient": "Vitamin A",
+            "gene": "BCMO1",
+            "snp": "rs7501331",
+            "genotypes": {
+                "TT": "Normal conversion of beta-carotene to vitamin A",
+                "CT": "Moderate conversion",
+                "CC": "Low conversion; consider preformed vitamin A"
+            }
+        },
+        {
+            "nutrient": "Zinc",
+            "gene": "SLC30A8",
+            "snp": "rs13266634",
+            "genotypes": {
+                "CC": "Normal zinc transport",
+                "CT": "Reduced zinc transport",
+                "TT": "Higher risk of zinc deficiency"
+            }
+        },
+        {
+            "nutrient": "Vitamin E",
+            "gene": "TTPA",
+            "snp": "rs6994076",
+            "genotypes": {
+                "TT": "Normal vitamin E transport",
+                "CT": "Reduced transport efficiency",
+                "CC": "Low vitamin E; consider supplementation"
+            }
+        },
+        {
+            "nutrient": "Vitamin K",
+            "gene": "VKORC1",
+            "snp": "rs9923231",
+            "genotypes": {
+                "GG": "Normal vitamin K metabolism",
+                "GA": "Slightly increased sensitivity",
+                "AA": "High sensitivity to vitamin K levels"
+            }
+        },
+        {
+            "nutrient": "Choline",
+            "gene": "CHDH",
+            "snp": "rs12676",
+            "genotypes": {
+                "GG": "Normal choline metabolism",
+                "GA": "Moderately reduced synthesis",
+                "AA": "Low synthesis; higher choline needs"
+            }
+        },
+        {
+            "nutrient": "Sodium",
+            "gene": "SCNN1B",
+            "snp": "rs239345",
+            "genotypes": {
+                "CC": "Normal sodium balance",
+                "CT": "Moderate sodium sensitivity",
+                "TT": "High sodium retention; higher BP risk"
+            }
+        },
+        {
+            "nutrient": "Iodine",
+            "gene": "SLC5A5",
+            "snp": "rs77277498",
+            "genotypes": {
+                "GG": "Normal iodine uptake",
+                "AG": "Slightly reduced uptake",
+                "AA": "Significantly reduced uptake"
+            }
+        },
+        {
+            "nutrient": "Copper",
+            "gene": "ATOX1",
+            "snp": "rs57165765",
+            "genotypes": {
+                "GG": "Normal copper transport",
+                "GA": "Moderate alteration",
+                "AA": "Impaired copper transport"
+            }
+        },
+        {
+            "nutrient": "Phosphorus",
+            "gene": "FGF23",
+            "snp": "rs7955866",
+            "genotypes": {
+                "TT": "Normal phosphorus regulation",
+                "CT": "Moderate phosphorus imbalance risk",
+                "CC": "Increased phosphorus retention"
+            }
+        },
+        {
+            "nutrient": "Manganese",
+            "gene": "SLC30A10",
+            "snp": "rs2275707",
+            "genotypes": {
+                "CC": "Normal manganese metabolism",
+                "CT": "Reduced transport",
+                "TT": "High risk of manganese overload"
+            }
+        },
+        {
+            "nutrient": "Vitamin B6",
+            "gene": "NBPF3",
+            "snp": "rs4654748",
+            "genotypes": {
+                "CC": "Efficient B6 metabolism",
+                "CT": "Reduced efficiency",
+                "TT": "Poor B6 utilization"
+            }
+        }
+    ],
+    "Food Sensitivities": [
+        {
+            "condition": "Lactose Intolerance",
+            "gene": "LCT",
+            "snp": "rs4988235",
+            "genotypes": {
+                "TT": "Lactose tolerant",
+                "CT": "Partially tolerant",
+                "CC": "Lactose intolerant"
+            }
+        },
+        {
+            "condition": "Alcohol Sensitivity",
+            "gene": "ALDH2",
+            "snp": "rs671",
+            "genotypes": {
+                "GG": "Normal alcohol metabolism",
+                "AG": "Reduced activity, mild flush reaction",
+                "AA": "Inactive enzyme; strong alcohol flush, nausea, cancer risk"
+            }
+        },
+        {
+            "condition": "Histamine Sensitivity",
+            "gene": "DAO",
+            "snp": "rs10156191",
+            "genotypes": {
+                "CC": "Normal histamine breakdown",
+                "CT": "Reduced breakdown capacity",
+                "TT": "High sensitivity to histamine-rich foods"
+            }
+        },
+        {
+            "condition": "Gluten Sensitivity (non-celiac)",
+            "gene": "IL2",
+            "snp": "rs2069763",
+            "genotypes": {
+                "AA": "Normal immune response",
+                "AG": "Slight sensitivity",
+                "GG": "Increased gluten sensitivity"
+            }
+        },
+        {
+            "condition": "MSG Sensitivity",
+            "gene": "GRM7",
+            "snp": "rs3792452",
+            "genotypes": {
+                "AA": "Normal glutamate response",
+                "AG": "Moderate sensitivity",
+                "GG": "High MSG sensitivity"
+            }
+        },
+        {
+            "condition": "Oxalate Sensitivity",
+            "gene": "AGXT",
+            "snp": "rs34116584",
+            "genotypes": {
+                "GG": "Normal oxalate processing",
+                "GA": "Reduced enzyme efficiency",
+                "AA": "High risk of oxalate accumulation"
+            }
+        },
+        {
+            "condition": "FODMAP Sensitivity",
+            "gene": "SLC5A1",
+            "snp": "rs1304037",
+            "genotypes": {
+                "AA": "Normal FODMAP digestion",
+                "AG": "Mild sensitivity",
+                "GG": "Increased bloating and intolerance"
+            }
+        }
+    ],
+    "Macronutrient Processing": [
+        {
+            "trait": "Fat Storage/Obesity Risk",
+            "gene": "FTO",
+            "snp": "rs9939609",
+            "genotypes": {
+                "TT": "Normal risk",
+                "AT": "Moderate risk of weight gain",
+                "AA": "High appetite, increased obesity risk"
+            }
+        },
+        {
+            "trait": "Carb/Diabetes Risk",
+            "gene": "TCF7L2",
+            "snp": "rs7903146",
+            "genotypes": {
+                "CC": "Normal insulin sensitivity",
+                "CT": "Increased diabetes risk",
+                "TT": "High risk of type 2 diabetes"
+            }
+        },
+        {
+            "trait": "Protein Metabolism",
+            "gene": "PEMT",
+            "snp": "rs7946",
+            "genotypes": {
+                "GG": "Normal choline synthesis",
+                "GA": "Slightly reduced choline synthesis",
+                "AA": "Low synthesis; may need dietary choline"
+            }
+        },
+        {
+            "trait": "Carbohydrate Processing",
+            "gene": "AMY1",
+            "snp": "Copy number variation",
+            "genotypes": {
+                "High copy number": "Efficient starch digestion",
+                "Low copy number": "Poor starch digestion; higher glucose response"
+            }
+        },
+        {
+            "trait": "Cholesterol Absorption",
+            "gene": "NPC1L1",
+            "snp": "rs2072183",
+            "genotypes": {
+                "CC": "Low cholesterol absorption",
+                "CT": "Moderate absorption",
+                "TT": "High cholesterol absorption"
+            }
+        },
+        {
+            "trait": "Triglyceride Metabolism",
+            "gene": "APOA5",
+            "snp": "rs662799",
+            "genotypes": {
+                "GG": "Normal triglyceride metabolism",
+                "AG": "Elevated triglycerides",
+                "AA": "High triglyceride levels"
+            }
+        }
+    ],
+    "Caffeine Metabolism": [
+        {
+            "trait": "Caffeine Sensitivity",
+            "gene": "CYP1A2",
+            "snp": "rs762551",
+            "genotypes": {
+                "AA": "Fast metabolizer \u2013 lower risk with caffeine",
+                "AC": "Intermediate metabolism",
+                "CC": "Slow metabolizer \u2013 higher heart risk with caffeine"
+            }
+        }
+    ],
+    "Chronic Disease Risk": [
+        {
+            "condition": "Heart Disease (LDL)",
+            "gene": "APOE",
+            "snp": "rs429358 + rs7412",
+            "genotypes": {
+                "\u03b53/\u03b53": "Normal LDL levels",
+                "\u03b53/\u03b54": "Elevated LDL, higher heart risk",
+                "\u03b54/\u03b54": "Elevated LDL, higher heart risk",
+                "\u03b52/\u03b53": "Lower LDL, potential triglyceride issues"
+            }
+        },
+        {
+            "condition": "Hypertension Risk",
+            "gene": "ACE",
+            "snp": "rs4343",
+            "genotypes": {
+                "GG": "Higher enzyme activity \u2013 possible higher BP",
+                "AG": "Intermediate risk",
+                "AA": "Lower enzyme levels, lower BP risk"
+            }
+        },
+        {
+            "condition": "Type 2 Diabetes",
+            "gene": "SLC30A8",
+            "snp": "rs13266634",
+            "genotypes": {
+                "CC": "Normal risk",
+                "CT": "Moderate increased risk",
+                "TT": "Higher risk for type 2 diabetes"
+            }
+        },
+        {
+            "condition": "Metabolic Syndrome",
+            "gene": "LEPR",
+            "snp": "rs1137101",
+            "genotypes": {
+                "AA": "Normal leptin receptor function",
+                "AG": "Moderate risk",
+                "GG": "High leptin resistance; increased obesity risk"
+            }
+        },
+        {
+            "condition": "Inflammation Sensitivity",
+            "gene": "TNF",
+            "snp": "rs1800629",
+            "genotypes": {
+                "GG": "Normal TNF-alpha expression",
+                "GA": "Slight elevation",
+                "AA": "High pro-inflammatory response"
+            }
+        }
+    ]
+}
