@@ -1,0 +1,28 @@
+{
+     "nutrients": {
+        "calories": {"GG": 1500, "AG":1800, "AA": 2000, "CC":2000, "CT": 1800, "TT": 1500},
+        "protein": {"TT": 50, "AA": 70, "AT": 70},
+        "total_fat": {"value": 70, "unit": "g"},
+        "saturated_fat": {"value": 20, "unit": "g"},
+        "carbohydrates": {"CC":275, "CT": 150, "TT": 100},
+        "fiber": {"value": 28, "unit": "g"},
+        "added_sugars": {"value": 50, "unit": "g", "note": "limit"},
+        "cholesterol": {"CC":400, "CT": 300, "TT": 200},
+        "calcium": {"GG": 1000, "AG":1500, "AA": 1500},
+        "iron": {"GG": 18, "AG":30, "AA": 45},
+        "magnesium": {"GG": 400, "AG":450, "AA": 500},
+        "sodium": {"CC": 2300, "CT":2300, "TT": 1500},
+        "zinc": {"CC": 11, "CT":15, "TT": 30},
+        "phosphorus": {"CC": 700, "CT":1000, "TT": 1000},
+        "manganese": {"CC": 2.3, "CT":1.8, "TT": 1.5},
+        "vitamin_a": {"CC": 700, "CT":800, "TT": 900},
+        "vitamin_d": {"AA": 20, "GA":25, "GG": 50},
+        "vitamin_e": {"CC": 30, "CT":20, "TT": 15},
+        "vitamin_k": {"CC": 120, "CT":90, "TT": 70},
+        "vitamin_b6": {"CC": 1.3, "CT":2, "TT": 3},
+        "folate_b9": {"CC": 400, "CT":600, "TT": 1000},
+        "vitamin_b12": {"CC": 2.4, "CT":4, "TT": 8},
+        "choline": {"GG": 425, "AG":500, "AA": 750},
+        "omega_3_ala": {"GG": 500, "GT":500, "TT": 1000}
+    }
+}

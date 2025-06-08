@@ -1,27 +1,44 @@
 import React from 'react';
+import linkData from '../NutrientLinks.json';
 
-// Helper to assign a color based on category
-const getCategoryColor = (category) => {
-  switch (category) {
-    case 'Macronutrients': return 'text-info';
-    case 'Micronutrients': return 'text-success';
-    case 'Sensitivities': return 'text-warning';
-    case 'Metabolic Health': return 'text-danger';
-    case 'Lifestyle': return 'text-secondary';
-    default: return 'text-dark';
+// The links are nested. Let's flatten the structure for easy lookup.
+const linkDict = linkData["Nutrient Metabolism"] ? linkData["Nutrient Metabolism"][0] : {};
+
+const TraitResult = ({ result }) => {
+  if (!result || Object.keys(result).length === 0) {
+    // Return null to not render the component if there are no results.
+    // Or you can return a placeholder.
+    return (
+        <div className="card shadow-sm border-primary mb-4">
+            <div className="card-body">
+                <h5 className="card-title text-primary">Analysis Results</h5>
+                <p>No traits to display. Upload a file and click Analyze.</p>
+            </div>
+        </div>
+    );
   }
-};
-
-const TraitResult = ({ trait }) => {
-  const colorClass = getCategoryColor(trait.category);
-
+  
   return (
-    <div className="border-bottom pb-2 mb-2">
-      <p className="mb-0 fw-bold">
-        <span className={`fs-4 me-2 ${colorClass}`}>•</span>
-        {trait.trait}
-      </p>
-      <small className="text-muted ms-4">{trait.summary}</small>
+    <div className="card shadow-sm border-primary mb-4">
+      <div className="card-body">
+        <h5 className="card-title text-primary">Analysis Results</h5>
+        {Object.entries(result).map(([nutrient, snpResults]) => (
+          <div key={nutrient} className="mb-3">
+            <h6>
+                <a href={linkDict[nutrient] || "#"} target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                    {nutrient}
+                </a>
+            </h6>
+            <ul className="list-group list-group-flush">
+              {snpResults.map((snpResult, index) => (
+                <li key={index} className="list-group-item">
+                  {snpResult.meaning}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
