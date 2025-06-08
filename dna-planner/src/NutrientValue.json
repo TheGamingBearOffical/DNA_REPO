@@ -1,8 +1,17 @@
 ﻿{
-    "Nutrient Metabolism": [
+    "Nutrients": [
         {
             "nutrient": "Folate (B9)",
-                        "nutrient": "Vitamin D",
+            "gene": "MTHFR",
+            "snp": "rs1801133",
+            "genotypes": {
+                "CC": "Normal folate metabolism",
+                "CT": "Moderate reduction in MTHFR activity (~65%)",
+                "TT": "High reduction (~30% activity), need methylated folate"
+            }
+        },
+        {
+            "nutrient": "Vitamin D",
             "gene": "CYP2R1",
             "snp": "rs10741657",
             "genotypes": {
@@ -172,7 +181,7 @@
             }
         }
     ],
-    "Food Sensitivities": [
+    "Conditions": [
         {
             "condition": "Lactose Intolerance",
             "gene": "LCT",
@@ -242,9 +251,59 @@
                 "AG": "Mild sensitivity",
                 "GG": "Increased bloating and intolerance"
             }
+        }, {
+            "condition": "Heart Disease (LDL)",
+            "gene": "APOE",
+            "snp": "rs429358 + rs7412",
+            "genotypes": {
+                "\u03b53/\u03b53": "Normal LDL levels",
+                "\u03b53/\u03b54": "Elevated LDL, higher heart risk",
+                "\u03b54/\u03b54": "Elevated LDL, higher heart risk",
+                "\u03b52/\u03b53": "Lower LDL, potential triglyceride issues"
+            }
+        },
+        {
+            "condition": "Hypertension Risk",
+            "gene": "ACE",
+            "snp": "rs4343",
+            "genotypes": {
+                "GG": "Higher enzyme activity \u2013 possible higher BP",
+                "AG": "Intermediate risk",
+                "AA": "Lower enzyme levels, lower BP risk"
+            }
+        },
+        {
+            "condition": "Type 2 Diabetes",
+            "gene": "SLC30A8",
+            "snp": "rs13266634",
+            "genotypes": {
+                "CC": "Normal risk",
+                "CT": "Moderate increased risk",
+                "TT": "Higher risk for type 2 diabetes"
+            }
+        },
+        {
+            "condition": "Metabolic Syndrome",
+            "gene": "LEPR",
+            "snp": "rs1137101",
+            "genotypes": {
+                "AA": "Normal leptin receptor function",
+                "AG": "Moderate risk",
+                "GG": "High leptin resistance; increased obesity risk"
+            }
+        },
+        {
+            "condition": "Inflammation Sensitivity",
+            "gene": "TNF",
+            "snp": "rs1800629",
+            "genotypes": {
+                "GG": "Normal TNF-alpha expression",
+                "GA": "Slight elevation",
+                "AA": "High pro-inflammatory response"
+            }
         }
     ],
-    "Macronutrient Processing": [
+    "Traits": [
         {
             "trait": "Fat Storage/Obesity Risk",
             "gene": "FTO",
@@ -303,9 +362,7 @@
                 "AG": "Elevated triglycerides",
                 "AA": "High triglyceride levels"
             }
-        }
-    ],
-    "Caffeine Metabolism": [
+        },
         {
             "trait": "Caffeine Sensitivity",
             "gene": "CYP1A2",
@@ -314,59 +371,6 @@
                 "AA": "Fast metabolizer \u2013 lower risk with caffeine",
                 "AC": "Intermediate metabolism",
                 "CC": "Slow metabolizer \u2013 higher heart risk with caffeine"
-            }
-        }
-    ],
-    "Chronic Disease Risk": [
-        {
-            "condition": "Heart Disease (LDL)",
-            "gene": "APOE",
-            "snp": "rs429358 + rs7412",
-            "genotypes": {
-                "\u03b53/\u03b53": "Normal LDL levels",
-                "\u03b53/\u03b54": "Elevated LDL, higher heart risk",
-                "\u03b54/\u03b54": "Elevated LDL, higher heart risk",
-                "\u03b52/\u03b53": "Lower LDL, potential triglyceride issues"
-            }
-        },
-        {
-            "condition": "Hypertension Risk",
-            "gene": "ACE",
-            "snp": "rs4343",
-            "genotypes": {
-                "GG": "Higher enzyme activity \u2013 possible higher BP",
-                "AG": "Intermediate risk",
-                "AA": "Lower enzyme levels, lower BP risk"
-            }
-        },
-        {
-            "condition": "Type 2 Diabetes",
-            "gene": "SLC30A8",
-            "snp": "rs13266634",
-            "genotypes": {
-                "CC": "Normal risk",
-                "CT": "Moderate increased risk",
-                "TT": "Higher risk for type 2 diabetes"
-            }
-        },
-        {
-            "condition": "Metabolic Syndrome",
-            "gene": "LEPR",
-            "snp": "rs1137101",
-            "genotypes": {
-                "AA": "Normal leptin receptor function",
-                "AG": "Moderate risk",
-                "GG": "High leptin resistance; increased obesity risk"
-            }
-        },
-        {
-            "condition": "Inflammation Sensitivity",
-            "gene": "TNF",
-            "snp": "rs1800629",
-            "genotypes": {
-                "GG": "Normal TNF-alpha expression",
-                "GA": "Slight elevation",
-                "AA": "High pro-inflammatory response"
             }
         }
     ]
