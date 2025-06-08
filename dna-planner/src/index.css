@@ -1,0 +1,26 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Segoe+UI&family=Roboto&display=swap');
+
+body {
+  background-color: #f8f9fa; /* Bootstrap's "light" color */
+  font-family: 'Poppins', 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Custom styles for a cleaner look */
+.card {
+  transition: all 0.2s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Custom button for the brand color */
+.btn-brand {
+  background-color: #0d6efd; /* Bootstrap Primary Blue */
+  color: white;
+}
+.btn-brand:hover {
+  background-color: #0b5ed7;
+  color: white;
+}

@@ -1,0 +1,35 @@
+{
+  "alex-123": {
+    "name": "Alex Miller",
+    "snps": {
+      "FTO": "high-sensitivity",
+      "AMY1": "low-copy",
+      "CYP1A2": "slow",
+      "APOE": "e3/e3",
+      "MTHFR": "normal",
+      "LCT": "normal"
+    }
+  },
+  "ben-456": {
+    "name": "Ben Carter",
+    "snps": {
+      "FTO": "normal",
+      "AMY1": "high-copy",
+      "CYP1A2": "fast",
+      "APOE": "e3/e4",
+      "MTHFR": "variant",
+      "LCT": "variant"
+    }
+  },
+  "chloe-789": {
+    "name": "Chloe Davis",
+    "snps": {
+      "FTO": "normal",
+      "AMY1": "normal",
+      "CYP1A2": "slow",
+      "APOE": "e2/e3",
+      "MTHFR": "normal",
+      "LCT": "variant"
+    }
+  }
+}
