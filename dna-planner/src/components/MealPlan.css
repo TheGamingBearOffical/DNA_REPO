@@ -1,0 +1,79 @@
+.meal-plan-content {
+    /* styles for the content area */
+}
+
+.meal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.meal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.meal-item:last-child {
+    border-bottom: none;
+}
+
+.meal-item-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+}
+
+.meal-item-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.meal-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.meal-item-calories {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.btn-remove-item {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-remove-item:hover {
+    color: var(--danger-color);
+    background-color: var(--secondary-color);
+}
+
+.meal-plan-divider {
+    margin: 1.5rem 0;
+    border-color: var(--border-color);
+    border-style: solid;
+    border-width: 1px 0 0 0;
+}
+
+.total-calories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+} 

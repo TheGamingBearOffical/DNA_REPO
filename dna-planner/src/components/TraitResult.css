@@ -1,0 +1,38 @@
+.trait-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.trait-item {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.trait-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-sm);
+}
+
+.trait-link {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.trait-link:hover {
+    color: var(--primary-color);
+}
+
+.trait-details {
+    margin-top: 0.5rem;
+}
+
+.trait-meaning {
+    font-size: 0.9rem;
+    color: var(--text-light);
+} 

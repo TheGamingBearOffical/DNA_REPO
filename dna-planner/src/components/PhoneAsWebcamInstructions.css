@@ -1,0 +1,106 @@
+.instructions-container {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.instructions-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.os-section {
+    margin-bottom: 1.5rem;
+}
+
+.os-section:last-child {
+    margin-bottom: 0;
+}
+
+.os-header {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+}
+
+.os-header svg {
+    margin-right: 0.5rem;
+    color: var(--text-light);
+}
+
+.instructions-text {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.instruction-steps,
+.instruction-steps-ol {
+    list-style-position: inside;
+    padding-left: 0;
+    color: var(--text-dark);
+}
+
+.instruction-steps li,
+.instruction-steps-ol li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.instruction-steps-ol {
+    list-style-type: decimal;
+    padding-left: 1.2rem; /* Indent ordered list */
+}
+.instruction-steps-ol li {
+    display: list-item;
+    align-items: normal;
+}
+
+
+.instruction-steps {
+    list-style-type: none;
+}
+
+.step-icon {
+    margin-right: 0.75rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.instructions-footnote {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.75rem;
+}
+
+.troubleshooting-section {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.troubleshooting-title {
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.troubleshooting-section .instruction-steps li {
+    align-items: flex-start;
+}
+
+.troubleshooting-section .step-icon {
+    margin-top: 3px;
+} 

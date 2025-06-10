@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import nutrientData from '../NutrientValue.json';
+import './Upload.css';
 
 const Upload = ({ onAnalysisComplete }) => {
   const [genomeData, setGenomeData] = useState(null);
@@ -108,28 +109,28 @@ const Upload = ({ onAnalysisComplete }) => {
   };
 
   return (
-    <div className="card shadow-sm border-primary mb-4">
-      <div className="card-body">
-        <h5 className="card-title text-primary">Upload DNA & Analyze</h5>
-        <p className="card-text">Upload your genome file (e.g., from 23andMe) to see your personalized traits.</p>
-        <div className="input-group">
-          <input
-            type="file"
-            className="form-control"
-            accept=".txt"
-            onChange={handleFileChange}
-            id="dna-upload"
-          />
-          <button
-            className="btn btn-primary"
-            type="button"
-            onClick={performAnalysis}
-            disabled={!genomeData}
-          >
-            Analyze
-          </button>
-        </div>
-        {fileName && <p className="mt-2 text-muted">Selected file: {fileName}</p>}
+    <div className="card-custom">
+      <h5 className="card-custom-title">Upload DNA & Analyze</h5>
+      <p className="card-custom-text">Upload your genome file (e.g., from 23andMe) to see your personalized traits.</p>
+      <div className="upload-container">
+        <label htmlFor="dna-upload" className="upload-label">
+          {fileName ? `Selected: ${fileName}` : 'Choose a file...'}
+        </label>
+        <input
+          type="file"
+          className="upload-input"
+          accept=".txt"
+          onChange={handleFileChange}
+          id="dna-upload"
+        />
+        <button
+          className="btn-custom-primary"
+          type="button"
+          onClick={performAnalysis}
+          disabled={!genomeData}
+        >
+          Analyze
+        </button>
       </div>
     </div>
   );

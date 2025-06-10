@@ -36,3 +36,92 @@
     transform: rotate(360deg);
   }
 }
+
+/* General container style */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card-custom {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+  transition: box-shadow 0.2s ease-in-out;
+  height: 100%; /* For grid layouts */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-custom:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.card-custom-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.card-custom-text {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.btn-custom-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-custom-primary:hover {
+    background-color: #3a7bc8; /* A slightly darker blue */
+    color: var(--white);
+}
+
+.btn-custom-primary:disabled {
+    background-color: #a0c3e8;
+    cursor: not-allowed;
+}
+
+.btn-custom-outline {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-custom-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-custom-outline:disabled {
+    color: #a0c3e8;
+    border-color: #a0c3e8;
+    cursor: not-allowed;
+    background-color: transparent;
+}

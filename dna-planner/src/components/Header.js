@@ -1,15 +1,23 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './Header.css';
+import ThemeToggle from './ThemeToggle';
 
-const Header = () => {
+const Header = ({ theme, toggleTheme }) => {
   return (
-    <div className="d-flex justify-content-between align-items-center border-bottom border-secondary pb-3 mb-4">
-      <h1 className="display-6 fw-semibold">DNA Diet Planner</h1>
-      <div>
-        <NavLink to="/" className={({ isActive }) => "btn btn-outline-primary me-2" + (isActive ? " active" : "")}>Home</NavLink>
-        <NavLink to="/meal-plan" className={({ isActive }) => "btn btn-outline-primary" + (isActive ? " active" : "")}>Meal Plan</NavLink>
+    <header className="app-header">
+      <div className="logo">
+        <span role="img" aria-label="dna-strand">🧬</span>
+        <h1>DNA Diet Planner</h1>
       </div>
-    </div>
+      <div className="header-controls">
+        <nav>
+          <NavLink to="/" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>Home</NavLink>
+          <NavLink to="/meal-plan" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>Meal Plan</NavLink>
+        </nav>
+        <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+      </div>
+    </header>
   );
 };
 

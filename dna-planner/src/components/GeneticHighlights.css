@@ -1,0 +1,48 @@
+.genetic-highlights .highlights-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.highlight-section h6 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-section.hero-foods h6 {
+    color: var(--success-color);
+}
+
+.highlight-section.foods-to-watch h6 {
+    color: var(--danger-color);
+}
+
+.highlight-section p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.highlight-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 1.5rem;
+    border-left: 3px solid var(--border-color);
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.highlight-section li {
+    font-size: 0.95rem;
+}
+
+.highlight-section li strong {
+    font-weight: 600;
+    color: var(--text-dark);
+} 

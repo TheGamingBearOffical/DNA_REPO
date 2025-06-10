@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import WebcamCapture from './WebcamCapture';
 import { callImageAnalysisApi } from '../api/imageAnalysis';
 import LoadingSpinner from './LoadingSpinner';
+import './FoodInfo.css';
 
 const FoodInfo = ({ onAddItem }) => {
   const [showWebcam, setShowWebcam] = useState(false);
@@ -16,9 +17,16 @@ const FoodInfo = ({ onAddItem }) => {
       setIsLoading(false);
 
       if (foodData && foodData.foodName) {
-        onAddItem({ name: foodData.foodName, calories: parseInt(foodData.calories, 10) || 0, image: capturedImage });
+        onAddItem({ 
+          name: foodData.foodName, 
+          calories: parseInt(foodData.calories, 10) || 0, 
+          protein: parseInt(foodData.protein, 10) || 0,
+          fat: parseInt(foodData.fat, 10) || 0,
+          carbs: parseInt(foodData.carbs, 10) || 0,
+          image: capturedImage 
+        });
       } else {
-        onAddItem({ name: "Unrecognized Item", calories: 0, image: capturedImage });
+        onAddItem({ name: "Unrecognized Item", calories: 0, protein: 0, fat: 0, carbs: 0, image: capturedImage });
       }
       
       setCapturedImage(null);
@@ -36,30 +44,37 @@ const FoodInfo = ({ onAddItem }) => {
   };
 
   return (
-    <div className="card shadow-sm border-primary">
-      <div className="card-body">
-        {isLoading ? (
-          <LoadingSpinner />
-        ) : showWebcam ? (
-          <WebcamCapture onCapture={handleCapture} />
-        ) : (
-          <>
-            <button className="btn btn-primary w-100 mb-3" onClick={handlePicClick}>Take Pic</button>
+    <div className="card-custom">
+      {isLoading ? (
+        <LoadingSpinner />
+      ) : showWebcam ? (
+        <WebcamCapture onCapture={handleCapture} />
+      ) : (
+        <>
+          <h5 className="card-custom-title">Add Food Item</h5>
+          <div className="food-info-content">
+            <p className="card-custom-text">Take a picture of your food to analyze its nutritional content.</p>
+            
             {capturedImage && (
-              <div className="mb-3">
-                <img src={capturedImage} width="100" alt="captured" />
+              <div className="captured-image-preview">
+                <img src={capturedImage} alt="captured food" />
               </div>
             )}
+          </div>
+          <div className="button-group">
+            <button className="btn-custom-primary" onClick={handlePicClick}>
+              Take Pic
+            </button>
             <button
-              className="btn btn-outline-primary w-100"
+              className="btn-custom-outline"
               onClick={handleAddItemClick}
               disabled={!capturedImage}
             >
               Add Item
             </button>
-          </>
-        )}
-      </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };

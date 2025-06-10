@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getAIRecomendations } from '../api/recommendations';
 import ReactMarkdown from 'react-markdown';
 import Spinner from 'react-bootstrap/Spinner';
+import './AiRecommendations.css';
 
 
 const AiRecommendations = ({ mealItems, analysisResult }) => {
@@ -25,9 +26,9 @@ const AiRecommendations = ({ mealItems, analysisResult }) => {
   const renderContent = () => {
     if (isLoading) {
       return (
-        <div className="text-center">
+        <div className="loading-container">
           <Spinner animation="grow" variant="primary" />
-          <p className="mt-2 text-primary">Generating your personalized recommendations...</p>
+          <p className="loading-text">Generating your personalized recommendations...</p>
         </div>
       );
     }
@@ -38,17 +39,19 @@ const AiRecommendations = ({ mealItems, analysisResult }) => {
     
     // Default message when no recommendations have been generated yet
     return (
-      <p className="card-text">
+      <p className="card-custom-text">
         Add food items and analyze your DNA to get personalized AI recommendations.
       </p>
     );
   };
 
   return (
-    <div className="card bg-white border-primary shadow-sm">
+    <div className="card-custom ai-recommendations">
       <div className="card-body">
-        <h5 className="card-title text-primary">AI Meal Recommendations</h5>
-        {renderContent()}
+        <h5 className="card-custom-title">AI Meal Recommendations</h5>
+        <div className="recommendations-content">
+          {renderContent()}
+        </div>
       </div>
     </div>
   );

@@ -1,10 +1,11 @@
 import React from 'react';
 import Spinner from 'react-bootstrap/Spinner';
+import './LoadingSpinner.css';
 
 const LoadingSpinner = () => (
-  <div className="text-center py-5">
-    <Spinner animation="border" variant="primary" style={{ width: '3rem', height: '3rem' }}/>
-    <p className="mt-3 fs-5 text-primary">Analyzing Food...</p>
+  <div className="loading-spinner-overlay">
+    <Spinner animation="border" as="span" className="custom-spinner" />
+    <p className="loading-text">Analyzing Food...</p>
   </div>
 );
 

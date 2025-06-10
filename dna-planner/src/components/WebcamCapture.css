@@ -1,0 +1,87 @@
+.webcam-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.webcam-feed, .webcam-preview {
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+    width: 100% !important;
+    height: auto !important;
+    max-width: 250px;
+}
+
+.webcam-controls {
+    width: 100%;
+    max-width: 250px;
+}
+
+.camera-select-container {
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.form-select {
+    background-color: var(--white);
+    color: var(--text-dark);
+    border: 1px solid var(--border-color);
+    flex-grow: 1;
+}
+
+.btn-custom-icon {
+    background: none;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    width: 38px; /* Match select height */
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    color: var(--text-light);
+    flex-shrink: 0;
+}
+
+.btn-custom-icon:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.camera-select-container .btn-custom-icon {
+    margin-left: 0.5rem;
+}
+
+.no-camera-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+  width: 100%;
+  max-width: 240px;
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+  border: 2px dashed var(--border-color);
+  border-radius: var(--border-radius);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+}
+
+.no-camera-found svg {
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.no-camera-found p {
+  margin: 0;
+  font-size: 0.9rem;
+} 

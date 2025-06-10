@@ -1,0 +1,51 @@
+.ai-recommendations .loading-container {
+    text-align: center;
+    padding: 2rem;
+}
+
+.ai-recommendations .loading-text {
+    margin-top: 1rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.recommendations-content {
+    color: var(--text-light);
+}
+
+.recommendations-content h1,
+.recommendations-content h2,
+.recommendations-content h3,
+.recommendations-content h4,
+.recommendations-content h5,
+.recommendations-content h6 {
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.recommendations-content ul,
+.recommendations-content ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.recommendations-content p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.recommendations-content strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.recommendations-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.recommendations-content a:hover {
+    text-decoration: underline;
+} 
